@@ -4,6 +4,18 @@ month = 3
 
 year = 2022
 
+% %%%%%%% Leap Test %%%%%%%%%
+
+def LeapTest(year):
+	return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
+
+if LeapTest(year) == True:
+	print('Is leap year')
+else:
+	print('Is NOT leap year')
+	
+% %%%%%%%%%%% Date to Day Number %%%%%%%%%%%%
+
 Matrix = [0, 3, 0, 3, 2, 3, 2, 3, 3, 2, 3, 2]
 
 if LeapTest == True:
