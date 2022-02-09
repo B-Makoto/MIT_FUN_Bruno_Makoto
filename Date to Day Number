@@ -1,0 +1,23 @@
+day = 14
+
+month = 3
+
+year = 2022
+
+Matrix = [0, 3, 0, 3, 2, 3, 2, 3, 3, 2, 3, 2]
+
+if LeapTest == True:
+	Matrix[2] = 1
+  
+  # Now, we have to calculate the sum of the matrix's numbers until a given month. I'll create a loop to do this
+
+Sum = 0
+num = 0
+
+for Matrix[num] in Matrix:
+	if num == month:
+		DayNumber = day + 28*(month-1) + Sum
+		print(DayNumber)
+		break
+	Sum = Sum + Matrix[num]
+	num += 1
